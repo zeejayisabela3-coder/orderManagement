@@ -9,6 +9,7 @@
            
             while (true)
             {
+                
                 Console.WriteLine("ORDER MANAGEMENT");
                 Console.WriteLine("1. View Order");
                 Console.WriteLine("2. Update Order");
@@ -22,9 +23,16 @@
                 {
                     case "1":
                         Console.WriteLine("Viewing of Order");
+                        Console.WriteLine("username: zj" +
+                            "item: pencil" +
+                            "price: 10kyaw" +
+                            "address: blk 12 lot 16 loma,binan laguna");
                         break;
                     case "2":
                         Console.WriteLine("Updating of orders");
+                        Console.WriteLine("enter username: ");
+                        String username = Console.ReadLine();
+
                         break;
                     case "3":
                         Console.WriteLine("deletion of orders");
