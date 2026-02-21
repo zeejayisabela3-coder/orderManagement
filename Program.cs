@@ -32,7 +32,11 @@
                         Console.WriteLine("Updating of orders");
                         Console.WriteLine("enter username: ");
                         String username = Console.ReadLine();
-
+                        Console.WriteLine("item: pencil " +
+                            "price: 10kyaw" );
+                        Console.WriteLine();
+                        Console.WriteLine("Address: change+");
+                        String username = Console.ReadLine();
                         break;
                     case "3":
                         Console.WriteLine("deletion of orders");
