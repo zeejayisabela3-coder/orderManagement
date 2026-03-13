@@ -1,31 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O8AdIbm16as=",
-  "success": false,
+  "dgSpecHash": "Z+8321Db/gY=",
+  "success": true,
   "projectFilePath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Karl\\Documents\\GitHub\\OrderManagementAppService\\OrderManagementAppService.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
-      "filePath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
-      "libraryId": "C:\\Users\\Karl\\Documents\\GitHub\\OrderManagementAppService\\OrderManagementAppService.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Karl\\Documents\\GitHub\\orderManagementModels\\OrderManagementModels.csproj'. Check that the project reference is valid and that the project file exists.",
-      "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
-      "filePath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
-      "libraryId": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagementModels\\OrderManagementModels.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

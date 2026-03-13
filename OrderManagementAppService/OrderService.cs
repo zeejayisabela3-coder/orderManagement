@@ -10,7 +10,7 @@ namespace OrderManagementAppService
 
         public double Balance { get; private set; } = 10000;
 
-        public bool CreateOrder(string item, int qty, double price)
+        public bool CreateOrder(string item, int qty, double price, DateTime deliveryDate)
         {
             double total = price * qty;
 
@@ -22,7 +22,8 @@ namespace OrderManagementAppService
                 {
                     ItemName = item,
                     Quantity = qty,
-                    TotalPrice = total
+                    TotalPrice = total,
+                    DeliveryDate = deliveryDate
                 };
 
                 repo.AddOrder(order);

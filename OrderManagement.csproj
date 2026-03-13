@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>OrderManagement.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OrderManagementAppService\**" />
+    <Compile Remove="OrderManagementDataService\**" />
+    <Compile Remove="orderManagementModels\**" />
+    <EmbeddedResource Remove="OrderManagementAppService\**" />
+    <EmbeddedResource Remove="OrderManagementDataService\**" />
+    <EmbeddedResource Remove="orderManagementModels\**" />
+    <None Remove="OrderManagementAppService\**" />
+    <None Remove="OrderManagementDataService\**" />
+    <None Remove="orderManagementModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="OrderManagementAppService\OrderManagementAppService.csproj" />
+    <ProjectReference Include="orderManagementModels\OrderManagementModels.csproj" />
+  </ItemGroup>
+
+
+</Project>

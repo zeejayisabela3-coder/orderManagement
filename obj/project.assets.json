@@ -1,13 +1,67 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "OrderManagementAppService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "OrderManagementDataService": "1.0.0",
+          "OrderManagementModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OrderManagementAppService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderManagementAppService.dll": {}
+        }
+      },
+      "OrderManagementDataService/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "OrderManagementModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OrderManagementDataService.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderManagementDataService.dll": {}
+        }
+      },
+      "OrderManagementModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/OrderManagementModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderManagementModels.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "OrderManagementAppService/1.0.0": {
+      "type": "project",
+      "path": "OrderManagementAppService/OrderManagementAppService.csproj",
+      "msbuildProject": "OrderManagementAppService/OrderManagementAppService.csproj"
+    },
+    "OrderManagementDataService/1.0.0": {
+      "type": "project",
+      "path": "OrderManagementDataService/OrderManagementDataService.csproj",
+      "msbuildProject": "OrderManagementDataService/OrderManagementDataService.csproj"
+    },
+    "OrderManagementModels/1.0.0": {
+      "type": "project",
+      "path": "orderManagementModels/OrderManagementModels.csproj",
+      "msbuildProject": "orderManagementModels/OrderManagementModels.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "C:\\Users\\Karl\\Documents\\GitHub\\OrderManagementAppService\\OrderManagementAppService.csproj",
-      "C:\\Users\\Karl\\Documents\\GitHub\\orderManagementModels\\OrderManagementModels.csproj"
+      "OrderManagementAppService >= 1.0.0",
+      "OrderManagementModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -37,11 +91,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Karl\\Documents\\GitHub\\OrderManagementAppService\\OrderManagementAppService.csproj": {
-              "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\OrderManagementAppService\\OrderManagementAppService.csproj"
+            "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj": {
+              "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj"
             },
-            "C:\\Users\\Karl\\Documents\\GitHub\\orderManagementModels\\OrderManagementModels.csproj": {
-              "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagementModels\\OrderManagementModels.csproj"
+            "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\orderManagementModels\\OrderManagementModels.csproj": {
+              "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\orderManagementModels\\OrderManagementModels.csproj"
             }
           }
         }
@@ -80,25 +134,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Karl\\Documents\\GitHub\\OrderManagementAppService\\OrderManagementAppService.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Karl\\Documents\\GitHub\\OrderManagementAppService\\OrderManagementAppService.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\Karl\\Documents\\GitHub\\orderManagementModels\\OrderManagementModels.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagementModels\\OrderManagementModels.csproj",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }
