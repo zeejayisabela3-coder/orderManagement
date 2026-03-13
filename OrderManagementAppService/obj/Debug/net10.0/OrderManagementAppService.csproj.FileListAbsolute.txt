@@ -1,0 +1,17 @@
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\bin\Debug\net10.0\OrderManagementAppService.deps.json
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\bin\Debug\net10.0\OrderManagementAppService.dll
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\bin\Debug\net10.0\OrderManagementAppService.pdb
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\bin\Debug\net10.0\OrderManagementDataService.dll
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\bin\Debug\net10.0\OrderManagementModels.dll
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\bin\Debug\net10.0\OrderManagementDataService.pdb
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\bin\Debug\net10.0\OrderManagementModels.pdb
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderManagementAppService.csproj.AssemblyReference.cache
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderManagementAppService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderManagementAppService.AssemblyInfoInputs.cache
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderManagementAppService.AssemblyInfo.cs
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderManagementAppService.csproj.CoreCompileInputs.cache
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderMan.F7310A1F.Up2Date
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderManagementAppService.dll
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\refint\OrderManagementAppService.dll
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\OrderManagementAppService.pdb
+C:\Users\Karl\Documents\GitHub\OrderManagementAppService\obj\Debug\net10.0\ref\OrderManagementAppService.dll
