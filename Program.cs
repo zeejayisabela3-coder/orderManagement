@@ -1,6 +1,6 @@
 ﻿using System;
 using OrderManagementAppService;
-using OrderManagementModels;
+
 
 namespace OrderManagement
 {
@@ -37,7 +37,7 @@ namespace OrderManagement
                         break;
                 }
 
-                Console.Write("do you want another Transaction press (Y - Yes | N - No: ");
+                Console.Write("\ndo you want another Transaction press (Y - Yes | N - No: ");
                 loop = Convert.ToChar(Console.ReadLine());
             } while (loop == 'y' || loop == 'Y');
         }
@@ -53,11 +53,23 @@ namespace OrderManagement
 
         static void CreateOrder()
         {
-            Console.WriteLine("\nBalance: " + service.Balance);
-
+            Console.WriteLine("\n============================");
+            Console.WriteLine("Balance: " + service.Balance);
+            Console.WriteLine("============================");
+            Console.WriteLine("Select Item:");
             Console.WriteLine("1 Fish - 200");
             Console.WriteLine("2 Pork - 300");
             Console.WriteLine("3 Chicken - 100");
+            Console.WriteLine("4 Beef - 250");
+            Console.WriteLine("5 Lamb - 450");
+            Console.WriteLine("6 Goat - 350");
+            Console.WriteLine("7 Venison - 325");
+            Console.WriteLine("8 Turkey - 500");
+            Console.WriteLine("9 Duck - 400");
+            Console.WriteLine("10 Salmon - 560");
+            Console.WriteLine("11 Crab - 250");
+            Console.WriteLine("12 Shrimp - 350");
+            
 
             Console.Write("Select: ");
             string select = Console.ReadLine();
@@ -85,6 +97,51 @@ namespace OrderManagement
             {
                 item = "Chicken";
                 price = 100;
+            }
+            else if (select == "4")
+            {
+                item = "Beef";
+                price = 250;
+            }
+            else if (select == "5")
+            {
+                item = "Lamb";
+                price = 450;
+            }
+            else if (select == "6")
+            {
+                item = "Goat";
+                price = 350;
+            }
+            else if (select == "7")
+            {
+                item = "Venison";
+                price = 325;
+            }
+            else if (select == "8")
+            {
+                item = "Turkey";
+                price = 500;
+            }
+            else if (select == "9")
+            {
+                item = "Duck";
+                price = 400;
+            }
+            else if (select == "10")
+            {
+                item = "Salmon";
+                price = 560;
+            }
+            else if (select == "11")
+            {
+                item = "Crab";
+                price = 250;
+            }
+            else if (select == "12")
+            {
+                item = "Shrimp";
+                price = 350;
             }
             else
             {
@@ -114,7 +171,7 @@ namespace OrderManagement
         {
             var orders = service.GetOrders();
 
-            Console.WriteLine("\n===== ORDER LIST =====");
+            Console.WriteLine("\n===== ORDER LIST =====\n");
 
             foreach (var o in orders)
             {

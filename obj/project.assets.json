@@ -60,8 +60,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "OrderManagementAppService >= 1.0.0",
-      "OrderManagementModels >= 1.0.0"
+      "OrderManagementAppService >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -93,9 +92,6 @@
           "projectReferences": {
             "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj": {
               "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj"
-            },
-            "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\orderManagementModels\\OrderManagementModels.csproj": {
-              "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\orderManagementModels\\OrderManagementModels.csproj"
             }
           }
         }

@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="OrderManagementAppService\OrderManagementAppService.csproj" />
-    <ProjectReference Include="orderManagementModels\OrderManagementModels.csproj" />
   </ItemGroup>
 
 

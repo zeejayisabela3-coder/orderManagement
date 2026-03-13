@@ -30,9 +30,6 @@
             "projectReferences": {
               "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj": {
                 "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj"
-              },
-              "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\orderManagementModels\\OrderManagementModels.csproj": {
-                "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\orderManagementModels\\OrderManagementModels.csproj"
               }
             }
           }
