@@ -32,6 +32,13 @@ namespace OrderManagement
                         ViewOrders();
                         break;
 
+                    case "4":
+                        SearchOrders();
+                        break;
+                    case "5":
+                        ViewTotalSpending();
+                        break;
+
                     default:
                         Console.WriteLine("Invalid choice.");
                         break;
@@ -48,6 +55,8 @@ namespace OrderManagement
             Console.WriteLine("1. Create Order");
             Console.WriteLine("2. Cancel Last Order");
             Console.WriteLine("3. View Orders");
+            Console.WriteLine("4. Search Orders by Item");
+            Console.WriteLine("5. View Total Spending");
             Console.Write("Choice: ");
         }
 
@@ -179,6 +188,38 @@ namespace OrderManagement
             }
 
             Console.WriteLine("Remaining Balance: " + service.Balance);
+        }
+
+        static void SearchOrders()
+        {
+            Console.Write("Enter item name to search: ");
+            string keyword = Console.ReadLine().ToLower();
+
+            var orders = service.GetOrders();
+
+            Console.WriteLine("\n=== SEARCH RESULT ===\n");
+
+            foreach (var o in orders)
+            {
+                if (o.ItemName.ToLower().Contains(keyword))
+                {
+                    Console.WriteLine($"{o.ItemName} x{o.Quantity} - {o.TotalPrice} | Delivery: {o.DeliveryDate.ToShortDateString()}");
+                }
+            }
+        }
+
+        static void ViewTotalSpending()
+        {
+            var orders = service.GetOrders();
+            double total = 0;
+
+            foreach (var o in orders)
+            {
+                total += o.TotalPrice;
+            }
+
+            Console.WriteLine("\nTotal Spending: " + total);
+            Console.WriteLine("\nCurrent Balance: " + service.Balance);
         }
     }
 }

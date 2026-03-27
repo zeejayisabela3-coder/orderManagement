@@ -5,30 +5,30 @@ namespace OrderManagementDataService
 {
     public class OrderRepository
     {
-        private List<Order> orders = new List<Order>();
+        private JsonOrderRepository jsonRepo = new JsonOrderRepository();
+        private OrderDBRepository dbRepo = new OrderDBRepository();
 
         public void AddOrder(Order order)
         {
-            orders.Add(order);
+            Console.WriteLine("Adding order...");
+            jsonRepo.AddOrder(order);
+            dbRepo.AddOrder(order);
         }
 
         public void RemoveLastOrder()
         {
-            if (orders.Count > 0)
-                orders.RemoveAt(orders.Count - 1);
+            jsonRepo.RemoveLastOrder();
+            dbRepo.RemoveLastOrder();
         }
 
         public List<Order> GetOrders()
         {
-            return orders;
+            return dbRepo.GetOrders();
         }
 
         public Order GetLastOrder()
         {
-            if (orders.Count == 0)
-                return null;
-
-            return orders[orders.Count - 1];
+            return dbRepo.GetLastOrder();
         }
     }
 }
