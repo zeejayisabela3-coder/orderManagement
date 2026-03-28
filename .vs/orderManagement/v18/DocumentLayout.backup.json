@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CF050BC-0378-ED30-BD25-AFBC7058C65B}|OrderManagementDataService\\OrderManagementDataService.csproj|c:\\users\\karl\\documents\\github\\ordermanagement\\ordermanagementdataservice\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CF050BC-0378-ED30-BD25-AFBC7058C65B}|OrderManagementDataService\\OrderManagementDataService.csproj|solutionrelative:ordermanagementdataservice\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0782BB9F-198C-D49B-0BAC-2B9F86E06D5F}|OrderManagement.csproj|c:\\users\\karl\\documents\\github\\ordermanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0782BB9F-198C-D49B-0BAC-2B9F86E06D5F}|OrderManagement.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF050BC-0378-ED30-BD25-AFBC7058C65B}|OrderManagementDataService\\OrderManagementDataService.csproj|c:\\users\\karl\\documents\\github\\ordermanagement\\ordermanagementdataservice\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF050BC-0378-ED30-BD25-AFBC7058C65B}|OrderManagementDataService\\OrderManagementDataService.csproj|solutionrelative:ordermanagementdataservice\\orderdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CF050BC-0378-ED30-BD25-AFBC7058C65B}|OrderManagementDataService\\OrderManagementDataService.csproj|c:\\users\\karl\\documents\\github\\ordermanagement\\ordermanagementdataservice\\orderdataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OrderDB.cs",
               "DocumentMoniker": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementDataService\\OrderDB.cs",
               "RelativeDocumentMoniker": "OrderManagementDataService\\OrderDB.cs",
               "ToolTip": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementDataService\\OrderDB.cs",
               "RelativeToolTip": "OrderManagementDataService\\OrderDB.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAqwDEAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFwAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-27T06:25:06.446Z",
               "EditorCaption": ""
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
