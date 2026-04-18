@@ -98,5 +98,24 @@ namespace OrderManagementDataService
 
             return order;
         }
+
+        public void UpdateOrder(int id, Order order)
+        {
+            string query = @"UPDATE Orders 
+                     SET item_name=@item, quantity=@qty, total_price=@price, delivery_date=@date
+                     WHERE Id=@id";
+
+            SqlCommand cmd = new SqlCommand(query, sqlConnection);
+
+            cmd.Parameters.AddWithValue("@item", order.ItemName);
+            cmd.Parameters.AddWithValue("@qty", order.Quantity);
+            cmd.Parameters.AddWithValue("@price", order.TotalPrice);
+            cmd.Parameters.AddWithValue("@date", order.DeliveryDate);
+            cmd.Parameters.AddWithValue("@id", id);
+
+            sqlConnection.Open();
+            cmd.ExecuteNonQuery();
+            sqlConnection.Close();
+        }
     }
 }

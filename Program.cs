@@ -38,6 +38,9 @@ namespace OrderManagement
                     case "5":
                         ViewTotalSpending();
                         break;
+                    case "6":
+                        UpdateLastOrder();
+                        break;
 
                     default:
                         Console.WriteLine("Invalid choice.");
@@ -57,13 +60,14 @@ namespace OrderManagement
             Console.WriteLine("3. View Orders");
             Console.WriteLine("4. Search Orders by Item");
             Console.WriteLine("5. View Total Spending");
+            Console.WriteLine("6. Update Last Order");
             Console.Write("Choice: ");
         }
 
         static void CreateOrder()
         {
             Console.WriteLine("\n============================");
-            Console.WriteLine("Balance: " + service.Balance);
+            Console.WriteLine("Balance: " + service.GetBalance());
             Console.WriteLine("============================");
             Console.WriteLine("Select Item:");
             Console.WriteLine("1 Fish - 200");
@@ -187,7 +191,7 @@ namespace OrderManagement
                 Console.WriteLine($"{o.ItemName} x{o.Quantity} - {o.TotalPrice} | Delivery: {o.DeliveryDate.ToShortDateString()}");
             }
 
-            Console.WriteLine("Remaining Balance: " + service.Balance);
+            Console.WriteLine("Remaining Balance: " + service.GetBalance());
         }
 
         static void SearchOrders()
@@ -219,7 +223,34 @@ namespace OrderManagement
             }
 
             Console.WriteLine("\nTotal Spending: " + total);
-            Console.WriteLine("\nCurrent Balance: " + service.Balance);
+            Console.WriteLine("\nCurrent Balance: " + service.GetBalance());
+        }
+
+        static void UpdateLastOrder()
+        {
+            var last = service.GetLastOrder();
+
+            if (last == null)
+            {
+                Console.WriteLine("No orders found.");
+                return;
+            }
+
+            Console.WriteLine("\n===== UPDATE LAST ORDER =====");
+            Console.WriteLine($"Current: {last.ItemName} x{last.Quantity} - {last.TotalPrice} | Delivery: {last.DeliveryDate.ToShortDateString()}");
+
+            Console.Write("New Quantity: ");
+            int newQty = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("New Delivery Date (yyyy-mm-dd): ");
+            DateTime newDate = Convert.ToDateTime(Console.ReadLine());
+
+            bool success = service.UpdateLastOrder(newQty, newDate);
+
+            if (success)
+                Console.WriteLine("Order updated successfully!");
+            else
+                Console.WriteLine("Update failed (check balance).");
         }
     }
 }

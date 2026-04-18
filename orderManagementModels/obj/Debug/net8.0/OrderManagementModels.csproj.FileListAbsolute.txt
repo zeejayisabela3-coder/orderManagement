@@ -10,3 +10,15 @@ C:\Users\Karl\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\n
 C:\Users\Karl\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\refint\OrderManagementModels.dll
 C:\Users\Karl\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.pdb
 C:\Users\Karl\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\ref\OrderManagementModels.dll
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\bin\Debug\net8.0\OrderManagementModels.deps.json
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\bin\Debug\net8.0\OrderManagementModels.dll
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\bin\Debug\net8.0\OrderManagementModels.pdb
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.AssemblyInfoInputs.cache
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.AssemblyInfo.cs
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.csproj.CoreCompileInputs.cache
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.sourcelink.json
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.dll
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\refint\OrderManagementModels.dll
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\OrderManagementModels.pdb
+C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\orderManagementModels\obj\Debug\net8.0\ref\OrderManagementModels.dll

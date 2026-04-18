@@ -8,7 +8,7 @@ namespace OrderManagementDataService
 {
     public class JsonOrderRepository
     {
-        private string filePath = @"C:\Users\Karl\Documents\GitHub\orderManagement\OrderManagementDataService\orders.json";
+        private string filePath = @"C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\OrderManagementDataService\orders.json";
 
         public List<Order> GetOrders()
         {
@@ -53,6 +53,18 @@ namespace OrderManagementDataService
                 return null;
 
             return orders[orders.Count - 1];
+        }
+
+        public void UpdateLastOrder(Order updatedOrder)
+        {
+            var orders = GetOrders();
+
+            if (orders.Count == 0)
+                return;
+
+            orders[orders.Count - 1] = updatedOrder;
+
+            SaveOrders(orders);
         }
     }
 }
