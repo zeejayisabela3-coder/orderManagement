@@ -6,33 +6,34 @@ namespace OrderManagementDataService
     public class OrderRepository
     {
         private JsonOrderRepository jsonRepo = new JsonOrderRepository();
-       // private OrderDBRepository dbRepo = new OrderDBRepository();
+        private OrderDBRepository dbRepo = new OrderDBRepository();
 
         public void AddOrder(Order order)
         {
-            Console.WriteLine("Adding order...");
             jsonRepo.AddOrder(order);
-           // dbRepo.AddOrder(order);
+            dbRepo.AddOrder(order);
         }
 
         public void RemoveLastOrder()
         {
             jsonRepo.RemoveLastOrder();
-           // dbRepo.RemoveLastOrder();
+            dbRepo.RemoveLastOrder();
         }
 
         public List<Order> GetOrders()
         {
-            return jsonRepo.GetOrders();
+            return dbRepo.GetOrders();
         }
 
         public Order GetLastOrder()
         {
-            return jsonRepo.GetLastOrder();
+            return dbRepo.GetLastOrder();
         }
+
         public void UpdateLastOrder(Order updatedOrder)
         {
             jsonRepo.UpdateLastOrder(updatedOrder);
+            dbRepo.UpdateLastOrder(updatedOrder);
         }
     }
 }

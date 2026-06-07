@@ -3,18 +3,27 @@ using OrderManagementModels;
 using System.Collections.Generic;
 using System.IO;
 
-
 namespace OrderManagementDataService
 {
     public class JsonOrderRepository
     {
-        private string filePath = @"C:\Users\PUP-CITE-L2PC25\Documents\GitHub\orderManagement\OrderManagementDataService\orders.json";
+        private readonly string filePath;
+
+        public JsonOrderRepository()
+        {
+            filePath = Path.Combine(
+                AppDomain.CurrentDomain.BaseDirectory,
+                "orders.json"
+            );
+
+            if (!File.Exists(filePath))
+            {
+                File.WriteAllText(filePath, "[]");
+            }
+        }
 
         public List<Order> GetOrders()
         {
-            if (!File.Exists(filePath))
-                return new List<Order>();
-
             string json = File.ReadAllText(filePath);
 
             return JsonConvert.DeserializeObject<List<Order>>(json)
@@ -23,7 +32,11 @@ namespace OrderManagementDataService
 
         public void SaveOrders(List<Order> orders)
         {
-            string json = JsonConvert.SerializeObject(orders, Formatting.Indented);
+            string json = JsonConvert.SerializeObject(
+                orders,
+                Formatting.Indented
+            );
+
             File.WriteAllText(filePath, json);
         }
 

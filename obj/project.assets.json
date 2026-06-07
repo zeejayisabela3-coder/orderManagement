@@ -1298,23 +1298,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PUP-CITE-L2PC25\\.nuget\\packages\\": {},
+    "C:\\Users\\Karl\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PUP-CITE-L2PC25\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
+      "projectUniqueName": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
       "projectName": "OrderManagement",
-      "projectPath": "C:\\Users\\PUP-CITE-L2PC25\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
-      "packagesPath": "C:\\Users\\PUP-CITE-L2PC25\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PUP-CITE-L2PC25\\Documents\\GitHub\\orderManagement\\obj\\",
+      "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagement.csproj",
+      "packagesPath": "C:\\Users\\Karl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PUP-CITE-L2PC25\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Karl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1329,8 +1329,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\PUP-CITE-L2PC25\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj": {
-              "projectPath": "C:\\Users\\PUP-CITE-L2PC25\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj"
+            "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj": {
+              "projectPath": "C:\\Users\\Karl\\Documents\\GitHub\\orderManagement\\OrderManagementAppService\\OrderManagementAppService.csproj"
             }
           }
         }
@@ -1345,7 +1345,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -1366,7 +1366,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
